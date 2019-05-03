@@ -2,6 +2,10 @@
 ## 第一个python程序
 - 输入输出
 
-    print（‘1+2=’，1+2）
+   > `print（‘1+2=’，1+2）`
 
-    name = input('please enter your name:')
+    >`name = input('please enter your name:')`
+
+
+hello
+***
