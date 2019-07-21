@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
     "python.linting.pylintEnabled": true,
+=======
+    "python.autoComplete.addBrackets": true,
+>>>>>>> e2c78f37ad98a6809533e98a6252dde7a280a4c2
     "python.linting.enabled": true
 }
