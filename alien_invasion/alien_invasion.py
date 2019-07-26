@@ -1,7 +1,6 @@
 import sys
 import pygame
 from settings import Settings
-
 def run_game():
     #初始化
     pygame.init()
