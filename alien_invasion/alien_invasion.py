@@ -7,12 +7,11 @@ import game_functions as gf
 def run_game():
     #初始化
     pygame.init()
-
-    """
-    screen = pygame.display.set_mode((800,600))    #创建窗口
-    pygame.display.set_caption("Alien Invasion")
-    bg_color = (230,230,230)
-    """
+ 
+    # screen = pygame.display.set_mode((800,600))    #创建窗口
+    # pygame.display.set_caption("Alien Invasion")
+    # bg_color = (230,230,230)
+    
     #使用类进行初始化
     ai_settings = Settings()
     screen = pygame.display.set_mode((ai_settings.screen_width,ai_settings.screen_height))
@@ -20,7 +19,8 @@ def run_game():
     ship = Ship(screen)
     # 游戏主循环
     while True:
-        gf.check_events()
+        gf.check_events(ship)
+        ship.update()
         gf.update_screen(ai_settings,screen,ship)
         # 监视键盘和鼠标事件
         # for event in pygame.event.get():
