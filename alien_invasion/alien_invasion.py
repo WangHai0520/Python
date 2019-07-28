@@ -21,14 +21,15 @@ def run_game():
     # 游戏主循环
     while True:
         gf.check_events()
+        gf.update_screen(ai_settings,screen,ship)
         # 监视键盘和鼠标事件
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                sys.exit()
-            # 每次循环都重绘屏幕
-            #screen.fill(bg_color)
-            screen.fill(ai_settings.bg_color)
-            ship.blitme()
-            # 让最近绘制的屏幕可见
-            pygame.display.flip()
+        # for event in pygame.event.get():
+        #     if event.type == pygame.QUIT:
+        #         sys.exit()
+        #     # 每次循环都重绘屏幕
+        #     #screen.fill(bg_color)
+        #     screen.fill(ai_settings.bg_color)
+        #     ship.blitme()
+        #     # 让最近绘制的屏幕可见
+        #     pygame.display.flip()
 run_game()
